@@ -1,0 +1,14 @@
+__pycache__
+venv
+test
+*.log
+*.vim
+*.csv
+mklADMM/*.so
+mklADMM/factorization/*.data
+mklADMM/*.o
+mklADMM/main
+cuADMM/*.so
+cuADMM/factorization/*.data
+cuADMM/*.o
+cuADMM/main
