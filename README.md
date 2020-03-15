@@ -1,6 +1,6 @@
 # AITIP
 
-This repository hosts the source code of the AITIP web service available at https://aitip.algebragame.app.
+This repository hosts the source code of the AITIP web service available at https://aitip.org.
 
 AITIP(Information Theoretic Inequality Prover) is an online service that automatically proves or disproves information theory inequalities in the form of entropy, joint entropy and mutual information. Such problems are not only important in Information Theory, but they also arise in fields like Machine Learning and Cryptography.
 
