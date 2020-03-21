@@ -75,7 +75,7 @@ class Cadmm:
 
         E_p = None
         if E is not None:
-            E = np.asfortranarray(E.astype(np.double))
+            E = np.ascontiguousarray(E.astype(np.double))
             l = E.shape[0]
             E_p = E.ctypes.data_as(cdp)
 
