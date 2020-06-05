@@ -6,7 +6,7 @@ AITIP(Information Theoretic Inequality Prover) is an online service that automat
 
 For information inequalities involving more than a handful of random variables, it is tedious and sometimes infeasible to construct the proof or disproof by hand, and our web service automates this process. It can also be used as an educational tool for teaching and learning Information Theory.
 
-For the technical details, please refer to our paper [Scalable Automated Proving of Information Theoretic Inequalities with Proximal Algorithms](https://ieeexplore.ieee.org/abstract/document/8849799) published in IEEE ISIT 2019. The work is also accepted in IEEE Transactions on Information Theory in March, 2020.
+For the technical details, please refer to our paper [Proving and Disproving Information Inequalities: Theory and Scalable Algorithms](https://ieeexplore.ieee.org/document/9044774) accepted to IEEE Transactions on Information Theory.
 
 ## Installation
 
@@ -79,12 +79,11 @@ python3 main.py -i "I(A1;A2)>=I(A1;A3)" -u "A1->A2->A3" --gpu
 ## Citing
 
 ```
-@inproceedings{ling2019scalable,
-  title={Scalable Automated Proving of Information Theoretic Inequalities with Proximal Algorithms},
-  author={Ling, Lin and Tan, Chee Wei and Ho, Siu-Wai and Yeung, Raymond W},
-  booktitle={2019 IEEE International Symposium on Information Theory (ISIT)},
-  pages={1382--1386},
-  year={2019},
-  organization={IEEE}
+@article{ho2020proving,
+  title={Proving and Disproving Information Inequalities: Theory and Scalable Algorithms},
+  author={Ho, Siu-Wai and Ling, Lin and Tan, Chee Wei and Yeung, Raymond W},
+  journal={IEEE Transactions on Information Theory},
+  year={2020},
+  publisher={IEEE}
 }
 ```
