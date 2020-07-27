@@ -36,15 +36,14 @@ def get_proof(cadmm, l1, l2, l3, E, b, n, rvs):
             Di = parser.Combination.from_b(E[idx,:], n, rvs, cadmm)
 
             opt = '=' if len(l_idx) == 0 else '+'
-
             factor = -1 * l3_val[i]
-            if close(factor, -1):
-                factor = '-'
-            elif close(factor, 1):
-                factor = ''
-            elif factor < 0:
+
+            if opt == '+' and factor < 0:
                 factor = abs(factor)
                 opt = '-'
+
+            if close(factor, 1):
+                factor = ''
 
             out += '\t{}{}{{{}}}\n'.format(opt, factor, Di)
 
