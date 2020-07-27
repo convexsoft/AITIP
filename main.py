@@ -34,12 +34,19 @@ def get_proof(cadmm, l1, l2, l3, E, b, n, rvs):
 
         for i, idx in enumerate(l3_idx):
             Di = parser.Combination.from_b(E[idx,:], n, rvs, cadmm)
+
+            opt = '=' if len(l_idx) == 0 else '+'
+
             factor = -1 * l3_val[i]
             if close(factor, -1):
                 factor = '-'
             elif close(factor, 1):
                 factor = ''
-            out += '\t{}{}{{{}}}\n'.format('=' if len(l_idx) == 0 else '+', factor, Di)
+            elif factor < 0:
+                factor = abs(factor)
+                opt = '-'
+
+            out += '\t{}{}{{{}}}\n'.format(opt, factor, Di)
 
     out += '\t>=0\n'
     out += 'where expressions in [] are non-negative due to elemental inequalities,\n and expressions in {} are zero due to the user specified constraints.'
