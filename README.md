@@ -83,6 +83,9 @@ python3 main.py -i "I(A1;A2)>=I(A1;A3)" -u "A1->A2->A3" --gpu
   title={Proving and Disproving Information Inequalities: Theory and Scalable Algorithms},
   author={Ho, Siu-Wai and Ling, Lin and Tan, Chee Wei and Yeung, Raymond W},
   journal={IEEE Transactions on Information Theory},
+  volume={66},
+  number={9},
+  pages={5522--5536},
   year={2020},
   publisher={IEEE}
 }
